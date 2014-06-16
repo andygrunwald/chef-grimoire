@@ -17,7 +17,7 @@ Requirements
 
 Attributes
 ----------
-#### cvsanaly::default
+#### grimoire::default
 <table>
   <tr>
     <th>Key</th>
