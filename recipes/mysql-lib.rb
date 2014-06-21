@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: grimoire
-# Recipe:: mlstats
+# Recipe:: mysql-lib
 #
 # Copyright 2014, Andy Grunwald
 #
@@ -17,29 +17,11 @@
 # limitations under the License.
 #
 
-include_recipe "git"
-include_recipe "python"
-include_recipe "grimoire::mysql-lib"
+include_recipe "python::pip"
 
-targetDir = node[:grimoire][:mlstats][:destination]
+# MySQL python lib
+package "libmysqlclient-dev"
 
-directory "#{targetDir}" do
-	owner node[:grimoire][:mlstats][:owner]
-	group node[:grimoire][:mlstats][:group]
-	mode  "0755"
-	action :create
-	recursive true
-end
-
-git "checkout-mlstats" do
-	repository node[:grimoire][:mlstats][:repository]
-	reference node[:grimoire][:mlstats][:version]
-	action :sync
-	destination targetDir
-end
-
-execute "mlstats-setup.py install" do
-	command "python setup.py install"
-	cwd targetDir
-	action :run
+python_pip "MySQL-python" do
+  action :install
 end
