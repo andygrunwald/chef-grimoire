@@ -66,6 +66,7 @@ Please include the recipe of the application you want to install.
 
 ### grimoire::mlstats
 
+It will install [Mailing List Stats](https://github.com/MetricsGrimoire/MailingListStats).
 Just include `grimoire::mlstats` in your node's `run_list`:
 
 ```json
