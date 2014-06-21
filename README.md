@@ -26,31 +26,31 @@ Attributes
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>[:mlstats][:repository]</tt></td>
+    <td><tt>[:grimoire][:mlstats][:repository]</tt></td>
     <td>String</td>
     <td>Git-Repository / Source of Mailing List Stats</td>
     <td><tt>https://github.com/MetricsGrimoire/MailingListStats.git</tt></td>
   </tr>
   <tr>
-    <td><tt>[:mlstats][:version]</tt></td>
+    <td><tt>[:grimoire][:mlstats][:version]</tt></td>
     <td>String</td>
     <td>Branch / Tag which will be installed</td>
     <td><tt>master</tt></td>
   </tr>
   <tr>
-    <td><tt>[:mlstats][:destination]</tt></td>
+    <td><tt>[:grimoire][:mlstats][:destination]</tt></td>
     <td>String</td>
     <td>Path where :repository will be cloned</td>
     <td><tt>/tmp/MetricsGrimoire/mlstats</tt></td>
   </tr>
   <tr>
-    <td><tt>[:mlstats][:owner]</tt></td>
+    <td><tt>[:grimoire][:mlstats][:owner]</tt></td>
     <td>String</td>
     <td>Owner of :destination</td>
     <td><tt>root</tt></td>
   </tr>
   <tr>
-    <td><tt>[:mlstats][:group]</tt></td>
+    <td><tt>[:grimoire][:mlstats][:group]</tt></td>
     <td>String</td>
     <td>Group of :destination</td>
     <td><tt>root</tt></td>

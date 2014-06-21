@@ -21,13 +21,13 @@
 # Mailing List Stats
 #
 # Sometimes you want to install a fork of Mailing List Stats
-default[:mlstats][:repository] = "https://github.com/MetricsGrimoire/MailingListStats.git"
+default[:grimoire][:mlstats][:repository] = "https://github.com/MetricsGrimoire/MailingListStats.git"
 
 # If you want to checkout a fixed tag or a development version
-default[:mlstats][:version] = "master"
+default[:grimoire][:mlstats][:version] = "master"
 
 # The install directory of RepositoryHandler
-default[:mlstats][:destination] = "/tmp/MetricsGrimoire/mlstats"
+default[:grimoire][:mlstats][:destination] = "/tmp/MetricsGrimoire/mlstats"
 
-default[:mlstats][:owner] = "root"
-default[:mlstats][:group] = "root"
+default[:grimoire][:mlstats][:owner] = "root"
+default[:grimoire][:mlstats][:group] = "root"

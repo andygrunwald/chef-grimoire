@@ -20,19 +20,19 @@
 include_recipe "git"
 include_recipe "python"
 
-targetDir = node[:mlstats][:destination]
+targetDir = node[:grimoire][:mlstats][:destination]
 
 directory "#{targetDir}" do
-	owner node[:mlstats][:owner]
-	group node[:mlstats][:group]
+	owner node[:grimoire][:mlstats][:owner]
+	group node[:grimoire][:mlstats][:group]
 	mode  "0755"
 	action :create
 	recursive true
 end
 
 git "checkout-mlstats" do
-	repository node[:mlstats][:repository]
-	reference node[:mlstats][:version]
+	repository node[:grimoire][:mlstats][:repository]
+	reference node[:grimoire][:mlstats][:version]
 	action :sync
 	destination targetDir
 end
