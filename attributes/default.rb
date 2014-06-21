@@ -26,8 +26,38 @@ default[:grimoire][:mlstats][:repository] = "https://github.com/MetricsGrimoire/
 # If you want to checkout a fixed tag or a development version
 default[:grimoire][:mlstats][:version] = "master"
 
-# The install directory of RepositoryHandler
+# The install directory of Mailing List Stats
 default[:grimoire][:mlstats][:destination] = "/tmp/MetricsGrimoire/mlstats"
 
 default[:grimoire][:mlstats][:owner] = "root"
 default[:grimoire][:mlstats][:group] = "root"
+
+#
+# RepositoryHandler
+#
+# Sometimes you want to install a fork of RepositoryHandler
+default[:grimoire][:repositoryhandler][:repository] = "https://github.com/MetricsGrimoire/RepositoryHandler.git"
+
+# If you want to checkout a fixed tag or a development version
+default[:grimoire][:repositoryhandler][:version] = "master"
+
+# The install directory of RepositoryHandler
+default[:grimoire][:repositoryhandler][:destination] = "/tmp/MetricsGrimoire/RepositoryHandler"
+
+default[:grimoire][:repositoryhandler][:owner] = "root"
+default[:grimoire][:repositoryhandler][:group] = "root"
+
+#
+# CVSAnaly
+#
+# Sometimes you want to install a fork of CVSAnalY
+default[:grimoire][:cvsanaly][:repository] = "https://github.com/MetricsGrimoire/CVSAnalY.git"
+
+# If you want to checkout a fixed tag or a development version
+default[:grimoire][:cvsanaly][:version] = "master"
+
+# The install directory of CVSAnalY
+default[:grimoire][:cvsanaly][:destination] = "/tmp/MetricsGrimoire/CVSAnalY"
+
+default[:grimoire][:cvsanaly][:owner] = "root"
+default[:grimoire][:cvsanaly][:group] = "root"
