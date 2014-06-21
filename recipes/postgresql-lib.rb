@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: grimoire
-# Recipe:: mysql-lib
+# Recipe:: postgresql-lib
 #
 # Copyright 2014, Andy Grunwald
 #
@@ -19,10 +19,10 @@
 
 include_recipe "python::pip"
 
-# MySQL lib
-package "libmysqlclient-dev"
+# PostgreSQL lib
+package "libpq-dev"
 
-# MySQL python lib
-python_pip "MySQL-python" do
+# PostgreSQL python lib
+python_pip "psycopg2" do
   action :install
 end

@@ -20,6 +20,7 @@
 include_recipe "git"
 include_recipe "python"
 include_recipe "grimoire::mysql-lib"
+include_recipe "grimoire::postgresql-lib"
 
 targetDir = node[:grimoire][:mlstats][:destination]
 
