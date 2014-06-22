@@ -21,6 +21,9 @@ include_recipe "git"
 include_recipe "python"
 include_recipe "grimoire::mysql-lib"
 include_recipe "grimoire::postgresql-lib"
+# The new development branch of mlstats requires sqlalchemy
+# If this is fully merged into master, maybe we can drop mysql-lib + postgresql-lib
+include_recipe "grimoire::sqlalchemy"
 
 targetDir = node[:grimoire][:mlstats][:destination]
 
