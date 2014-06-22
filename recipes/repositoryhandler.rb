@@ -18,6 +18,7 @@
 #
 
 include_recipe "git"
+include_recipe "subversion"
 include_recipe "python"
 
 targetDir = node[:grimoire][:repositoryhandler][:destination]

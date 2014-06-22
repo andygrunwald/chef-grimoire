@@ -23,6 +23,7 @@ Please have a detailled look at the used tool itselfs to identify which storage 
 
 #### Cookbooks
 - `git`
+- `subversion`
 - `python`
 
 Attributes
