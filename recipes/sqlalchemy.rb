@@ -18,6 +18,6 @@
 #
 
 # sqlalchemy python package
-python_pip "sqlalchemy do
+python_pip "sqlalchemy" do
   action :install
 end
